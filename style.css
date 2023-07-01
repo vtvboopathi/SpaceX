@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    line-height: 20px;
+    margin-top: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    width: 200px;
+    height: 40px;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 3px;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform-origin: right center;
+}
+
+
+li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    margin-top: 10px;
+    width: 140px;
+    border: #fff 2px solid;
+    padding: 10px 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    transform-origin: bottom;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+p:hover{
+    background-color: #fff;
+    color: rgb(43, 43, 119);
+}
+
+.section h1,h2,p{
+    margin-left: 150px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section1{
+    background: url(section-a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2{
+    background: url(section-b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3{
+    background: url(section-c.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4{
+    background: url(section-d.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section5{
+    background: url(section-e.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section6{
+    background: url(section-f.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+}
+
+footer ul li{
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer ul li:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 1036px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    .section{
+        display: flex;
+        margin-left: 0;
+    }
+
+    .section h1,h2,p{
+        margin-left: 50px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    footer{
+
+    }
+}

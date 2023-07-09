@@ -173,20 +173,6 @@ footer ul li:hover{
     opacity: 0.5;
 }
 
-.vtv{
-    position: fixed;
-    right: 2px;
-    bottom:2px;
-    color: wheat;
-    font-size: 1rem;
-    user-select: none;
-}
-
-.vtv a{
-    text-decoration: none;
-    color: wheat;
-}
-
 @media (max-width: 1036px){
 
     body{
@@ -208,7 +194,4 @@ footer ul li:hover{
         cursor: pointer;
     }
 
-    footer{
-
-    }
 }
